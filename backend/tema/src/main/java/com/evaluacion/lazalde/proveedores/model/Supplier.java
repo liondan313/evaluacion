@@ -1,4 +1,4 @@
-package com.evaluacion.lazalde.tema.model;
+package com.evaluacion.lazalde.proveedores.model;
 
 
 import jakarta.persistence.*;

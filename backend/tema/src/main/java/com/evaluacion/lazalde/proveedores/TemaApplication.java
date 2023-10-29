@@ -1,4 +1,4 @@
-package com.evaluacion.lazalde.tema;
+package com.evaluacion.lazalde.proveedores;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

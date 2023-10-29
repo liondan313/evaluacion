@@ -1,4 +1,4 @@
-package com.evaluacion.lazalde.tema.exception;
+package com.evaluacion.lazalde.proveedores.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

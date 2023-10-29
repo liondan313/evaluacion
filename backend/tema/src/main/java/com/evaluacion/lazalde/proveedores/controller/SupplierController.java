@@ -1,8 +1,8 @@
-package com.evaluacion.lazalde.tema.controller;
+package com.evaluacion.lazalde.proveedores.controller;
 
-import com.evaluacion.lazalde.tema.exception.ResourceNotFoundException;
-import com.evaluacion.lazalde.tema.model.Supplier;
-import com.evaluacion.lazalde.tema.repository.SupplierRepository;
+import com.evaluacion.lazalde.proveedores.exception.ResourceNotFoundException;
+import com.evaluacion.lazalde.proveedores.model.Supplier;
+import com.evaluacion.lazalde.proveedores.repository.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

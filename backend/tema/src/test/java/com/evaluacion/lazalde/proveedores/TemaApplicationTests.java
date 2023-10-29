@@ -1,4 +1,4 @@
-package com.evaluacion.lazalde.tema;
+package com.evaluacion.lazalde.proveedores;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
