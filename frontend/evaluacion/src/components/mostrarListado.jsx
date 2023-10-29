@@ -30,11 +30,8 @@ function mostrarListado(suppliers, deleteSupplier) {
                         <TableCell>{supplier.businessSocial}</TableCell>
                         <TableCell>{supplier.address}</TableCell>
                         <TableCell>
-                        <Link to={`/edit-supplier/${supplier.id}`}>
-                            <Edit />
-                        </Link>
                             
-                            <DeleteIcon onClick = {() => deleteSupplier(supplier.id)} />
+                        <DeleteIcon onClick = {() => deleteSupplier(supplier.id)} />
                         </TableCell>
                     </TableRow>
                 ))}
