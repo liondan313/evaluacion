@@ -33,28 +33,20 @@ export default function Inicio() {
     }
 
     return (
-        <div>
-            
-{/*             { fetching && <Placeholder/> }
- */}            { !fetching && posts.length === 0 && 
-            
-            {/* <NoPosts text="No hay candidatos disponibles"></NoPosts> */}
-            
-            }
+        <div>            
             <div>
                 
                 <BienvenidoContador />
 
                 <div className = "text-center"> 
                     <Jumbotron>
-                    <h1>Bienvenido candidato {numberCandidate+1}</h1>
+                    <h1>Welcome candidate {numberCandidate+1}</h1>
                 </Jumbotron>
                 </div>
                 <div className="d-flex justify-content-center align-items-center">
                     
-                    <br></br>
-                    
-                    <Link to = "/suppliers" className = "btn btn-primary mb-2" > Continuar </Link>                    
+                    <br></br>                    
+                    <Link to = "/suppliers" className = "btn btn-primary mb-2" > Continue </Link>                    
                 </div>
             </div>
         </div>

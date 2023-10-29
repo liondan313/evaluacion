@@ -45,9 +45,8 @@ const ListSupplierComponent = () => {
               </div>
 
               <div className="container mt-4">
-                <h1 className="text-left text-dark">
-                    
-                    <FontAwesomeIcon icon={faCogs} /> <span className="text-primary">Administración</span>
+                <h1 className="text-left text-dark">                    
+                    <FontAwesomeIcon icon={faCogs} /> <span className="text-primary">Administration</span>
                 </h1>
                 
                 </div>
