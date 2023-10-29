@@ -1,12 +1,17 @@
-.even-row {
-    background-color: #f2f2f2; /* Color de fondo para filas pares */
-  }
-  
-  .odd-row {
-    background-color: #ffffff; /* Color de fondo para filas impares */
-  }
-
-  .negritaEncabezado{
+.negritaEncabezado{
     font-weight: bold
   }
   
+  /* Estilo para filas pares */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+/* Estilo para filas impares */
+tr:nth-child(odd) {
+  background-color: #ffffff; /* Color de fondo para filas impares */
+}
+
+.tabla-proveedores {
+  height: 90%;
+}
