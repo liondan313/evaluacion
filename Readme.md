@@ -14,6 +14,7 @@ En el proyecto del BackEnd se uso:
 
 -Java con Spring Boot 
 -Java 11
+-Maven para las dependencias
 -Mysql como base de datos, se puso en la nube de railway, asi que se conectara automaticamente con la configuración que se proporciono en el properties.
 
 
