@@ -19,7 +19,7 @@ function mostrarListado(suppliers, deleteSupplier) {
                     <TableCell className={'negritaEncabezado'}>First name</TableCell>
                     <TableCell className={'negritaEncabezado'}>Business social</TableCell>
                     <TableCell className={'negritaEncabezado'}>Address</TableCell>
-                    <TableCell className={'negritaEncabezado'}>Acciones</TableCell>
+                    <TableCell className={'negritaEncabezado'}>Actions</TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>
@@ -30,8 +30,11 @@ function mostrarListado(suppliers, deleteSupplier) {
                         <TableCell>{supplier.businessSocial}</TableCell>
                         <TableCell>{supplier.address}</TableCell>
                         <TableCell>
+                        <Link to={`/edit-supplier/${supplier.id}`}>
+                            <Edit />
+                        </Link>
                             
-                        <DeleteIcon onClick = {() => deleteSupplier(supplier.id)} />
+                            <DeleteIcon onClick = {() => deleteSupplier(supplier.id)} />
                         </TableCell>
                     </TableRow>
                 ))}

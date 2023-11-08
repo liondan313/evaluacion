@@ -5,10 +5,12 @@ import HeaderComponent from './components/HeaderComponent';
 import ListSupplierComponent from './components/ListSupplierComponent';
 import AddSupplierComponent from './components/AddSupplierComponent';
 import Inicio from './components/Inicio';
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <Router>
         <HeaderComponent />
         <div className= "container">
@@ -20,7 +22,7 @@ function App() {
         </div>
         <FooterComponent />
         </Router>
-    </div>
+    </Provider>
   );
 }
 

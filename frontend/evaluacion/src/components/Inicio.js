@@ -3,6 +3,10 @@ import { Jumbotron } from 'react-bootstrap';
 import SupplierService from '../services/SupplierService';
 import BienvenidoContador from './BienvenidoContador';
 import { Link } from 'react-router-dom'
+import DestruirComponente from '../exercise/DestruirComponente';
+import ContadorFuncional from '../exercise/Contador';
+import ContadorGlobal from '../exercise/ContadorGlobal';
+import WelcomeCandidate from './inicio/WelcomeCandidate';
 
 export default function Inicio() {
 
@@ -34,20 +38,17 @@ export default function Inicio() {
 
     return (
         <div>            
-            <div>
-                
-                <BienvenidoContador />
+            <div>                
+                <BienvenidoContador numberCandidate={numberCandidate+1} />               
 
-                <div className = "text-center"> 
-                    <Jumbotron>
-                    <h1>Welcome candidate {numberCandidate+1}</h1>
-                </Jumbotron>
-                </div>
-                <div className="d-flex justify-content-center align-items-center">
-                    
+                <div className="d-flex justify-content-center align-items-center">                    
                     <br></br>                    
                     <Link to = "/suppliers" className = "btn btn-primary mb-2" > Continue </Link>                    
                 </div>
+
+                <DestruirComponente/>
+                <ContadorFuncional/>
+                <ContadorGlobal/>
             </div>
         </div>
     )

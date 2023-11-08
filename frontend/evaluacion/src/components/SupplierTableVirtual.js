@@ -13,7 +13,7 @@ import {
 import DeleteIcon from '@material-ui/icons/Delete'; // Importa el ícono de eliminación de Material-UI
 import '../css/mostrarListado.css';
 
-const SupplierTableVirtual = ({ proveedores, deleteSupplier }) => {
+const SupplierTableVirtual = (props) => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
 
@@ -43,7 +43,7 @@ const SupplierTableVirtual = ({ proveedores, deleteSupplier }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {proveedores.slice(startIndex, endIndex).map((proveedor) => (
+            {props.proveedores.slice(startIndex, endIndex).map((proveedor) => (
               <TableRow key={proveedor.id}>
                 <TableCell>{proveedor.id}</TableCell>
                 <TableCell>{proveedor.firstName}</TableCell>
@@ -54,7 +54,7 @@ const SupplierTableVirtual = ({ proveedores, deleteSupplier }) => {
                     variant="outlined"
                     color="secondary"
                     startIcon={<DeleteIcon />}
-                    onClick={() => deleteSupplier(proveedor.id)}
+                    onClick={() => props.deleteSupplier(proveedor.id)}
                   >
                     Delete
                   </Button>
@@ -67,7 +67,7 @@ const SupplierTableVirtual = ({ proveedores, deleteSupplier }) => {
       <TablePagination
         rowsPerPageOptions={[5, 10, 25]}
         component="div"
-        count={proveedores.length}
+        count={props.proveedores.length}
         rowsPerPage={rowsPerPage}
         page={page}
         onPageChange={handleChangePage}
